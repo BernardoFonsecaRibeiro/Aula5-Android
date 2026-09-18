@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedra, Papel e Tesoura"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Oponente -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oponente"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <ImageView
+            android:id="@+id/imgOponente"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/pedra"
+            android:contentDescription="Escolha do oponente"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Resultado -->
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha sua jogada!"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Escolhas do jogador -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolha sua jogada:"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgPedra"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/pedra"
+                android:contentDescription="Escolher pedra"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="escolherPedra"
+                android:scaleType="fitCenter"
+                android:padding="5dp" />
+
+            <ImageView
+                android:id="@+id/imgPapel"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/papel"
+                android:contentDescription="Escolher papel"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="escolherPapel"
+                android:scaleType="fitCenter"
+                android:padding="5dp" />
+
+            <ImageView
+                android:id="@+id/imgTesoura"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/tesoura"
+                android:contentDescription="Escolher tesoura"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="escolherTesoura"
+                android:scaleType="fitCenter"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+        <!-- Placar -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLACAR"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/txtVitorias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vitórias: 0"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtDerrotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Derrotas: 0"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/txtEmpates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empates: 0"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</ScrollView>
